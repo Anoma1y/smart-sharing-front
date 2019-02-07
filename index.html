@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Test</title>
+    <meta name="description" content="">
+    <meta name="Author" content="Anoma1y">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="assets/css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href=".<%=htmlWebpackPlugin.files.chunks.main.css %>">
+
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <div class="wrapper">
+
+      <h4>Укажите сумму покупки</h4>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <form class="smart-form">
+            <label class="smart-form_label" for="test-1">Хочу купить</label>
+            <div class="smart-input-group">
+              <input type="text" id="test-1" class="smart_input" placeholder="0.00" size="8">
+              <div class="smart-select-group smart-select">
+                <select class="smart-select_selector fas">
+                  <option value="q" class="fas fa-dollar-sign">&#xf155;</option>
+                  <option value="w" class="fas fa-euro-sign">&#xf153;</option>
+                  <option value="e" class="fas fa-ruble-sign">&#xf158;</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="smart-form-footer">
+              <p class="smart-text">Текущий баланс: 0.000000 <span class="smart_currency">BTC</span></p>
+              <p class="smart-text">Станет на балансе: 1.015487 <span class="smart_currency">BTC</span></p>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-6">
+          <form class="smart-form">
+            <label class="smart-form_label" for="test-2">Хочу потратить</label>
+            <div class="smart-input-group">
+              <input type="text" id="test-2" class="smart_input" placeholder="0.00" size="8">
+              <div class="smart-select-group smart-select">
+                <select class="smart-select_selector fas">
+                  <option value="q" class="fas fa-dollar-sign">&#xf155;</option>
+                  <option value="w" class="fas fa-euro-sign">&#xf153;</option>
+                  <option value="e" class="fas fa-ruble-sign">&#xf158;</option>
+                </select>
+              </div>
+            </div>
+            <div class="smart-form-footer">
+              <p class="smart-text">Текущий баланс: 0.00 <span class="smart_currency">USD</span></p>
+              <p class="smart-text">Станет на балансе: -4300 <span class="smart_currency">USD</span></p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <script src=".<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  </body>
+</html>
