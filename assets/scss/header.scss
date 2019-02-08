@@ -1,0 +1,71 @@
+@import "vars";
+
+.site-header {
+  position: relative;
+  background-color: #2d2a26;
+  color: $white-color;
+  padding: .6rem 0;
+
+  & > .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  a, i {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  i {
+    color: inherit;
+    margin-right: .2rem;
+  }
+
+  a {
+    color: inherit;
+    transition: color .1s linear;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    &:hover {
+      color: #5ba;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:not(.far):not(.fas) {
+      font-size: .9rem;
+    }
+  }
+
+  &-logo {
+    & > div {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &_link {
+      margin-left: 1rem;
+      font-size: .8rem;
+    }
+
+    &_img {
+      width: 190px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &_nav {
+    font-size: 1.3rem;
+  }
+}
