@@ -2,6 +2,7 @@
   width: 100%;
   margin-top: 1rem;
   box-shadow: 3px 3px 5px 1px rgba($almost-black-color, .1);
+  cursor: default;
 
   &-balance {
     display: flex;
@@ -15,7 +16,7 @@
     }
 
     &_icon {
-      color: #27a09f;
+      color: $secondary-color;
       font-size: 3rem;
     }
 
@@ -27,23 +28,26 @@
       margin-left: 30px;
 
       &_header {
-        font-size: .8rem;
+        font-size: 14px;
+        font-weight: 400;
         margin-bottom: 10px;
       }
 
       &_value {
-        font-size: 1rem;
+        font-size: 16px;
+        font-weight: 600;
         margin-bottom: 8px;
-        font-weight: bold;
       }
 
       &_additional {
-        font-size: .6rem;
+        font-size: 11px;
       }
     }
   }
 
   &-buttons {
+    color: #666;
+
     &_button {
       position: relative;
 
@@ -74,8 +78,9 @@
       background: none;
       border: none;
       color: inherit;
-      font-size: .9rem;
-      font-weight: bold;
+      font-size: 14px;
+      font-weight: 600;
+      font-style: normal;
       padding: .75rem 0;
       cursor: pointer;
 

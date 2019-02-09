@@ -35,7 +35,6 @@
     "property-no-unknown": [true, {
       "severity": "warning"
     }],
-    "property-no-vendor-prefix": true,
 
     "declaration-bang-space-after": "never",
     "declaration-bang-space-before": "always",

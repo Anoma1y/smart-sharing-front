@@ -1,0 +1,30 @@
+.site-sidebar {
+  color: $almost-black-color;
+
+  li {
+    display: block;
+    font-size: 12px;
+  }
+
+  a {
+    display: block;
+    padding: 1.5rem 0;
+    color: $almost-black-color;
+
+    &.link__active {
+      color: $secondary-color;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover:not(.link__active) {
+      color: $secondary-color;
+    }
+  }
+}

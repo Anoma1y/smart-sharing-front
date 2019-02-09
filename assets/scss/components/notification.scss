@@ -1,7 +1,7 @@
 .notification {
   width: 100%;
   padding: 2rem 1rem;
-  background-color: #f2dbdb;
+  background-color: $light-red-color;
   display: flex;
   justify-content: space-around;
 
@@ -20,16 +20,20 @@
   span {
     display: block;
     padding: 0 2rem;
-    font-size: 1.8rem;
+    font-size: 28px;
   }
 
   p, a {
-    font-size: .75rem;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: normal;
   }
 
   a {
     text-decoration: underline;
-    color: #497ccd;
+    color: $blue-color;
+
+    &:hover {
+      color: lighten($blue-color, 10%);
+    }
   }
 }
