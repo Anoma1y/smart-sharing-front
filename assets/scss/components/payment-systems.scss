@@ -1,7 +1,19 @@
+.payment-systems {
+  margin: 1.2rem 0;
+
+  &_header {
+    margin-bottom: .5rem;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+  }
+}
+
 .payment-system {
   position: relative;
   height: 56px;
   width: 100%;
+  margin: .5rem 0;
 
   &_input {
     opacity: 0;
@@ -50,8 +62,8 @@
 
   i {
     display: block;
-    font-size: 2rem;
-    padding: 0 1.5rem;
+    font-size: 1.5rem;
+    width: 60px;
     color: $dark-gray-color;
   }
 

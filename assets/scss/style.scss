@@ -1,6 +1,7 @@
 @import "reset";
 @import "header";
 @import "components/sidebar";
+@import "components/headline";
 @import "components/card";
 @import "components/notification";
 @import "components/payment-systems";
@@ -12,6 +13,12 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
 }
 
 ul, li {

@@ -1,0 +1,18 @@
+.headline {
+  background-color: $gray95-color;
+  padding: .8rem 1rem;
+
+  h1 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: .5rem;
+  }
+
+  p {
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 2rem;
+    color: $gray20-color;
+  }
+}
