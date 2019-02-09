@@ -40,6 +40,24 @@ a, p, span, h1, h2, h3, h4, h5, h6, input, label {
   }
 }
 
+.smart-section {
+  margin: 2.5rem 0 4rem;
+}
+
+.smart-title {
+  margin-bottom: 2.5rem;
+}
+
+.smart-text {
+  font-size: 11px;
+  color: #333;
+}
+
+.smart_currency {
+  color: #5ba;
+  font-weight: normal;
+}
+
 .smart-form {
   display: flex;
   flex-flow: row wrap;
@@ -80,15 +98,6 @@ a, p, span, h1, h2, h3, h4, h5, h6, input, label {
   width: 100%;
 }
 
-.smart-text {
-  font-size: 11px;
-  color: #333;
-}
-
-.smart_currency {
-  color: #5ba;
-  font-weight: normal;
-}
 
 input, select {
   &:focus {
