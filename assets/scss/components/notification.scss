@@ -1,0 +1,35 @@
+.notification {
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: #f2dbdb;
+  display: flex;
+  justify-content: space-around;
+
+  &_item {
+    color: $almost-black-color;
+    display: flex;
+    align-items: center;
+    width: 33.3%;
+    cursor: default;
+  }
+
+  p, a, span {
+    color: inherit;
+  }
+
+  span {
+    display: block;
+    padding: 0 2rem;
+    font-size: 1.8rem;
+  }
+
+  p, a {
+    font-size: .75rem;
+    line-height: 1.5;
+  }
+
+  a {
+    text-decoration: underline;
+    color: #497ccd;
+  }
+}

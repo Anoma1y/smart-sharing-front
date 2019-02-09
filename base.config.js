@@ -29,7 +29,16 @@ module.exports = (options) => ({
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
           'postcss-loader',
-          'sass-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+              data: '@import "vars";',
+              includePaths: [
+                path.join(__dirname, 'assets/scss/')
+              ]
+            }
+          }
         ]
       },
       {
