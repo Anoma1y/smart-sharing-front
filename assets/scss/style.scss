@@ -2,6 +2,7 @@
 @import "header";
 @import "components/sidebar";
 @import "components/headline";
+@import "components/form";
 @import "components/card";
 @import "components/notification";
 @import "components/payment-systems";
@@ -56,86 +57,6 @@ a, p, span, h1, h2, h3, h4, h5, h6, input, label {
 .smart_currency {
   color: #5ba;
   font-weight: normal;
-}
-
-.smart-form {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-
-  &_label {
-    margin-bottom: .3rem;
-    font-size: 12px;
-    color: #666;
-  }
-
-  @media (min-width: 576px) {
-    .smart-input-group {
-      //width: auto;
-    }
-  }
-}
-
-.smart_input {
-  display: block;
-  width: 100%;
-  padding: .5rem .75rem;
-  font-size: 1rem;
-  line-height: 1.25;
-  color: #464a4c;
-  border: 1px solid rgba(0, 0, 0, .15);
-  border-right: none;
-  background-color: $white-color;
-
-  &__text-right {
-    text-align: right;
-  }
-}
-
-.smart-input-group {
-  position: relative;
-  display: flex;
-  width: 100%;
-}
-
-
-input, select {
-  &:focus {
-    outline: none;
-  }
-}
-
-.smart-select-group {
-  padding: .5rem .75rem;
-  margin-bottom: 0;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.25;
-  color: #999;
-  text-align: center;
-  border: 1px solid rgba(0, 0, 0, .15);
-  border-left: none;
-}
-
-.smart-select {
-  width: 2em;
-  text-align: left;
-  position: relative;
-
-  &_selector {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    padding-left: .5rem;
-    border: 0;
-    border-left: none;
-    appearance: none;
-    background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgogIDxnPgogICAgPHBhdGggZD0ibTEyMS4zLDM0LjZjLTEuNi0xLjYtNC4yLTEuNi01LjgsMGwtNTEsNTEuMS01MS4xLTUxLjFjLTEuNi0xLjYtNC4yLTEuNi01LjgsMC0xLjYsMS42LTEuNiw0LjIgMCw1LjhsNTMuOSw1My45YzAuOCwwLjggMS44LDEuMiAyLjksMS4yIDEsMCAyLjEtMC40IDIuOS0xLjJsNTMuOS01My45YzEuNy0xLjYgMS43LTQuMiAwLjEtNS44eiIgZmlsbD0iIzAwMDAwMCIvPgogIDwvZz4KPC9zdmc+Cg==) 90%/20px 10px no-repeat;
-    background-color: $white-color;
-    color: inherit;
-  }
 }
 
 h4 {
