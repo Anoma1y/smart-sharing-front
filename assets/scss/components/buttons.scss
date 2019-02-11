@@ -1,0 +1,43 @@
+.smart-buttons-group {
+  margin: 4rem 0 2rem;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+  }
+}
+
+.smart-button {
+  background: none;
+  padding: .5rem 1.2rem;
+  margin: 0 .5rem;
+  border: 2px solid $secondary-color;
+  border-radius: 5px;
+  color: $secondary-color;
+  font-size: 16px;
+  font-weight: 600;
+
+  &__back {
+    border-color: #65C6BB;
+    color: #65C6BB;
+  }
+
+  &__disabled {
+    border-color: #ccc;
+    color: #ccc;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}

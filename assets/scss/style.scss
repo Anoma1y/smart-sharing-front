@@ -4,6 +4,7 @@
 @import "components/headline";
 @import "components/form";
 @import "components/card";
+@import "components/buttons";
 @import "components/notification";
 @import "components/payment-systems";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
@@ -45,7 +46,7 @@ a, p, span, h1, h2, h3, h4, h5, h6, input, label {
   margin: 2rem 0;
 }
 
-.smart-section {
+.smart-block {
   margin: 2.5rem 0 4rem;
 }
 
