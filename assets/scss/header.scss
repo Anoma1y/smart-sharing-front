@@ -4,11 +4,17 @@
   color: $white-color;
   padding: .6rem 0;
 
-  & > .container {
+  &-container {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
   }
+
+  //& > .container {
+  //  display: flex;
+  //  flex-flow: row nowrap;
+  //  justify-content: space-between;
+  //}
 
   a, i {
     display: inline-block;

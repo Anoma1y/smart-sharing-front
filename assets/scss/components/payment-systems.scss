@@ -60,11 +60,20 @@
     text-align: left;
   }
 
-  i {
-    display: block;
+  &_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5rem;
     width: 60px;
+    height: 60px;
     color: $dark-gray-color;
+
+    &__custom {
+      background-repeat: no-repeat;
+      background-size: 65%;
+      background-position: center;
+    }
   }
 
   &_input:checked + &-tile {
