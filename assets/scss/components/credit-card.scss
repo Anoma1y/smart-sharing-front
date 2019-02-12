@@ -1,0 +1,120 @@
+$card-height: 240px;
+$golden-ratio: 1.618;
+$focused-color: #3d89b8;
+$unfocused-color: #337099;
+
+.smart-credit-card {
+  width: 500px;
+  height: 290px;
+  position: relative;
+  color: #666;
+  z-index: 1;
+
+  &-front, &-back {
+    position: absolute;
+    width: 390px;
+    height: 250px;
+    border-radius: 6px;
+    padding: 20px 30px;
+  }
+
+  &-front {
+    background-color: #EAF7F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-back {
+    top: 40px;
+    right: 0;
+    z-index: -2;
+    border: 2px solid #d2eeeb;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 40px;
+      width: 100%;
+      left: 0;
+      top: 25px;
+      background-color: #d2eeeb;
+    }
+  }
+
+  &-row {
+    margin: .5rem 0;
+  }
+
+  &-exp {
+    display: flex;
+
+    &_col {
+      width: 50%;
+      margin: 0 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+  }
+
+  label {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+
+  input, select {
+    border: 1px solid #ccc;
+  }
+
+  input {
+    width: 100%;
+    padding: .4rem .75rem;
+  }
+
+  select {
+    width: 100%;
+    padding: .5rem .75rem;
+    appearance: none;
+    background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgogIDxnPgogICAgPHBhdGggZD0ibTEyMS4zLDM0LjZjLTEuNi0xLjYtNC4yLTEuNi01LjgsMGwtNTEsNTEuMS01MS4xLTUxLjFjLTEuNi0xLjYtNC4yLTEuNi01LjgsMC0xLjYsMS42LTEuNiw0LjIgMCw1LjhsNTMuOSw1My45YzAuOCwwLjggMS44LDEuMiAyLjksMS4yIDEsMCAyLjEtMC40IDIuOS0xLjJsNTMuOS01My45YzEuNy0xLjYgMS43LTQuMiAwLjEtNS44eiIgZmlsbD0iIzAwMDAwMCIvPgogIDwvZz4KPC9zdmc+Cg==) 90%/10px 10px no-repeat;
+    background-color: $white-color;
+    color: inherit;
+  }
+
+  &_cvc {
+    position: absolute;
+    right: 0;
+    top: 85px;
+    display: flex;
+    flex-direction: column;
+    width: 108px;
+    padding: 0 15px;
+
+    label {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    input {
+      outline: none;
+      border: 1px solid #ccc;
+      padding: 10px 5px;
+    }
+
+    span {
+      margin-top: 5px;
+      font-size: 10px;
+      color: #999;
+    }
+  }
+}

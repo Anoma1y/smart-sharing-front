@@ -38,17 +38,20 @@
   }
 }
 
-.notification {
-  background-color: $light-red-color;
+.alert {
   padding: 1rem 0;
   display: flex;
   align-items: center;
-  color: #BD4949;
 
   &_icon {
     font-size: 2rem;
     width: 60px;
     text-align: center;
+
+    &:after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+    }
   }
 
   &-content {
@@ -58,6 +61,28 @@
     &_link {
       color: inherit;
       text-decoration: underline;
+    }
+  }
+
+  &__success {
+    color: #547d77;
+    background-color: #d2eeeb;
+
+    .alert_icon {
+      &:after {
+        content: "\f058";
+      }
+    }
+  }
+
+  &__error {
+    color: #BD4949;
+    background-color: $light-red-color;
+
+    .alert_icon {
+      &:after {
+        content: '\f06a';
+      }
     }
   }
 }

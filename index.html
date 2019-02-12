@@ -70,6 +70,20 @@
                 <p><span class="smart_currency">BTC/USD</span> 4309.9</p>
               </div>
 
+              <div class="alert alert__success">
+                <div class="alert_icon"></div>
+                <div class="alert-content">
+                  <p class="alert-content_text">Заявка на пополнение счета №0025 успешно создана</p>
+                </div>
+              </div>
+
+              <div class="alert alert__error">
+                <div class="alert_icon"></div>
+                <div class="alert-content">
+                  <p class="alert-content_text">Чтобы совершить оплату выбранным способом, необходимо будет пройти <a href="#" class="alert-content_link">верификацию</a></p>
+                </div>
+              </div>
+
               <div class="row">
                 <div class="col-lg-6">
 
@@ -261,14 +275,7 @@
                 </div>
               </div>
 
-              <div class="notification notification__error">
-                <div class="notification_icon">
-                  <i class="fas fa-exclamation"></i>
-                </div>
-                <div class="notification-content">
-                  <p class="notification-content_text">Чтобы совершить оплату выбранным способом, необходимо будет пройти <a href="#" class="notification-content_link">верификацию</a></p>
-                </div>
-              </div>
+
 
               <div class="smart-buttons-group">
                 <button class="smart-button smart-button__back">Назад</button>
@@ -315,20 +322,76 @@
 
               </div>
 
-              <div class="notification notification__error">
-                <div class="notification_icon">
-                  <i class="fas fa-exclamation"></i>
-                </div>
-                <div class="notification-content">
-                  <p class="notification-content_text">Чтобы совершить оплату выбранным способом, необходимо будет пройти <a href="#" class="notification-content_link">верификацию</a></p>
-                </div>
-              </div>
-
               <div class="smart-buttons-group">
                 <button class="smart-button smart-button__back">Назад</button>
                 <button class="smart-button">Продолжить</button>
                 <button class="smart-button smart-button__disabled">Перейти к оплате</button>
               </div>
+
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="smart-credit-card">
+                    <div class="smart-credit-card-front">
+
+                      <div class="smart-credit-card-row">
+                        <label for="card-number">
+                          Номер
+                        </label>
+                        <input type="text" id="card-number" placeholder="1234 5678 9101 1112">
+                      </div>
+                      <div class="smart-credit-card-row">
+                        <label for="exp">Действительна до</label>
+
+                        <div class="smart-credit-card-exp">
+                          <div class="smart-credit-card-exp_col">
+                            <select name="" id="">
+                              <option value="" hidden>мм</option>
+                              <option value="1">01</option>
+                              <option value="2">02</option>
+                              <option value="3">03</option>
+                              <option value="4">04</option>
+                              <option value="5">05</option>
+                              <option value="6">06</option>
+                              <option value="7">07</option>
+                              <option value="8">08</option>
+                              <option value="9">09</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                            </select>
+                          </div>
+                          <div class="smart-credit-card-exp_col">
+                            <select name="" id="">
+                              <option value="" hidden>гг</option>
+                              <option value="2018">18</option>
+                              <option value="2019">19</option>
+                              <option value="2020">20</option>
+                              <option value="2021">21</option>
+                              <option value="2022">22</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="smart-credit-card-row">
+                        <label for="cardholder">Имя владельца</label>
+                        <input type="text" id="cardholder" placeholder="IVANOV IVAN">
+                      </div>
+
+                    </div>
+                    <div class="smart-credit-card-back">
+                      <div class="smart-credit-card_cvc">
+                        <label for="cvc">CVV&nbsp;/&nbsp;CVC</label>
+                        <input id="cvc" type="text">
+                        <span>Три цифры с обратной стороны карты</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
             </section>
 
           </div>
