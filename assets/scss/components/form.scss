@@ -10,6 +10,10 @@
     color: #666;
   }
 
+  input {
+    border-right: none
+  }
+
   &_currency {
     width: 45px;
     position: relative;
@@ -26,6 +30,7 @@
     & > select {
       font-size: 1.2rem;
     }
+
 
     &__select {
       width: 60px;
@@ -69,11 +74,9 @@
   line-height: 1.25;
   color: #464a4c;
   border: 1px solid rgba(0, 0, 0, .15);
-  border-right: none;
-  background-color: $white-color;
 
-  &__text-right {
-    text-align: right;
+  &__disabled {
+    background-color: #f9f9f9;
   }
 }
 
@@ -83,10 +86,130 @@
   width: 100%;
 }
 
-.smart-select-group {
 
+.form-group {
+  margin-bottom: 1rem;
+
+  label {
+    display: block;
+    color: #666;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
 }
 
-.smart-form_currency {
-
+.form-row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
+  margin-right: -.5rem;
+  margin-left: -.5rem;
 }
+
+.form-footer {
+  p {
+    color: #777;
+    margin-top: .5rem;
+  }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+  &__border-right-none {
+    border-right: none;
+  }
+}
+
+.form-select {
+  position: relative;
+
+  &:after {
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 11px;
+    color: #aaa;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 0 2px;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  select {
+    margin: 0;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    display: inline-block;
+    appearance: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  &__icons {
+    select {
+      padding: .375rem 1.65rem .375rem .75rem;
+    }
+  }
+}
+
+.input-group-append {
+  //padding: .375rem .75rem;
+  height: auto;
+  border: 1px solid #ced4da;
+  border-left: none;
+  display: flex;
+  align-items: center;
+
+  &__border-none {
+    border: none;
+  }
+
+  i {
+    color: #999;
+    padding: 0 .75rem;
+  }
+
+  select {
+    border-left: none; // todo вынести в отдельный класс
+  }
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+
+  & .form-control {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+  }
+}
+
+

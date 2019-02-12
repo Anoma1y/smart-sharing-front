@@ -72,22 +72,13 @@ $unfocused-color: #337099;
     margin-bottom: 5px;
   }
 
-  input, select {
+  input, select { // tpdp изменить на общее
     border: 1px solid #ccc;
   }
 
   input {
     width: 100%;
     padding: .4rem .75rem;
-  }
-
-  select {
-    width: 100%;
-    padding: .5rem .75rem;
-    appearance: none;
-    background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgogIDxnPgogICAgPHBhdGggZD0ibTEyMS4zLDM0LjZjLTEuNi0xLjYtNC4yLTEuNi01LjgsMGwtNTEsNTEuMS01MS4xLTUxLjFjLTEuNi0xLjYtNC4yLTEuNi01LjgsMC0xLjYsMS42LTEuNiw0LjIgMCw1LjhsNTMuOSw1My45YzAuOCwwLjggMS44LDEuMiAyLjksMS4yIDEsMCAyLjEtMC40IDIuOS0xLjJsNTMuOS01My45YzEuNy0xLjYgMS43LTQuMiAwLjEtNS44eiIgZmlsbD0iIzAwMDAwMCIvPgogIDwvZz4KPC9zdmc+Cg==) 90%/10px 10px no-repeat;
-    background-color: $white-color;
-    color: inherit;
   }
 
   &_cvc {
