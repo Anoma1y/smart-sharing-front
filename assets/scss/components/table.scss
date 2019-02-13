@@ -2,7 +2,9 @@
   display: table;
   width: 100%;
   padding: 5px 15px;
-  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(#999, .12), 0 1px 2px rgba(#999, .20);
+  font-family: $font-main;
   color: #666;
 
   &_row {
@@ -12,8 +14,9 @@
   &_cell {
     display: table-cell;
     width: 50%;
-    padding: 15px 0;
+    padding: 10px 0;
     font-size: 14px;
+    line-height: 1.5;
   }
 
   &-body {
@@ -27,7 +30,6 @@
 
   &-foot {
     display: table-footer-group;
-    text-transform: uppercase;
 
     & .smart-table_cell {
       border-top: 1px solid #ccc;

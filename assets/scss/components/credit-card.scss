@@ -72,13 +72,17 @@ $unfocused-color: #337099;
     margin-bottom: 5px;
   }
 
-  input, select { // tpdp изменить на общее
-    border: 1px solid #ccc;
-  }
-
   input {
     width: 100%;
     padding: .4rem .75rem;
+  }
+
+  input, select { // tpdp изменить на общее
+    border: 1px solid #ccc;
+
+    &:focus {
+      border: 1px solid #999;
+    }
   }
 
   &_cvc {
@@ -97,8 +101,6 @@ $unfocused-color: #337099;
     }
 
     input {
-      outline: none;
-      border: 1px solid #ccc;
       padding: 10px 5px;
     }
 
