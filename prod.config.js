@@ -34,9 +34,9 @@ module.exports = require("./base.config")({
         removeEmptyAttributes: true,
         removeStyleLinkTypeAttributes: true,
         keepClosingSlash: true,
-        minifyJS: true,
-        minifyCSS: true,
-        minifyURLs: true,
+        minifyJS: false,
+        minifyCSS: false,
+        minifyURLs: false,
       },
       inject: false
     }),
