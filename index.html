@@ -74,6 +74,110 @@
               </div>
             </div>
 
+            <section>
+
+              <br />
+
+              <div class="smart-filter">
+                <span>Заявки</span>
+                <div class="form-select">
+                  <select>
+                    <option value="" hidden></option>
+                    <option value="1">В работе (3)</option>
+                    <option value="2">Завершены (0)</option>
+                  </select>
+                </div>
+                <div class="form-select">
+                  <select>
+                    <option value="" hidden>Тип</option>
+                    <option value="1">Покупка BTC</option>
+                    <option value="2">Продажа BTC</option>
+                  </select>
+                </div>
+                <div class="form-select">
+                  <select>
+                    <option value="" hidden>Статус</option>
+                    <option value="1">Требуется верификация</option>
+                    <option value="2">Идет обмен</option>
+                  </select>
+                </div>
+                <div>
+                  DataPickerHui
+                </div>
+              </div>
+
+              <br />
+
+              <table>
+                <thead>
+                  <tr>
+                    <th class="smart__text-center">Дата</th>
+                    <th>Тип</th>
+                    <th></th>
+                    <th class="smart__text-right">Сумма</th>
+                    <th>Статус</th>
+                    <th>Платёжная система</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Сегодня</td>
+                    <td>Покупка BTC</td>
+                    <td></td>
+                    <td class="smart__text-right">
+                      <span class="smart-topup">26 639,96 EUR</span>
+                      <span class="smart-withdrawal">3,578764545567 BTC</span>
+                    </td>
+                    <td>Требуется верификация</td>
+                    <td>Sepa/Swift</td>
+                  </tr>
+
+                  <tr>
+                    <td>Вчера</td>
+                    <td>Продажа BTC</td>
+                    <td class="smart__text-center">
+                      <span>
+                        <i class="far fa-comment-dots"></i>
+                      </span>
+                    </td>
+                    <td class="smart__text-right">
+                      <span class="smart-topup">3,578764545567 BTC</span>
+                      <span class="smart-withdrawal">26 639,96 EUR</span>
+                    </td>
+                    <td>Идёт обмен</td>
+                    <td>Visa/MasterCard</td>
+                  </tr>
+
+                  <tr>
+                    <td>04.12.2018</td>
+                    <td>Пополнение счета</td>
+                    <td class="smart__text-center">
+                      <span class="smart-have-messages">
+                        <i class="far fa-comment-dots"></i> + 1
+                      </span>
+                    </td>
+                    <td class="smart__text-right">
+                      <span class="smart-topup">26 639,96 EUR</span>
+                    </td>
+                    <td>Ожидается оплата</td>
+                    <td>Наличные</td>
+                  </tr>
+
+                  <tr>
+                    <td>15.11.2018</td>
+                    <td>Перевод средств</td>
+                    <td></td>
+                    <td class="smart__text-right">
+                      <span class="smart-withdrawal">3,578764545567 BTC</span>
+                    </td>
+                    <td>Идёт обмен</td>
+                    <td>Visa/MasterCard</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </section>
+
             <div class="row">
 
               <div class="col-xs-6">
@@ -322,12 +426,13 @@
                   <div class="form-row">
 
                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="penis_enlargement">
+                      <label class="form-check-label" for="penis_enlargement">Увеличить член</label>
+                    </div>
+
+                    <div class="form-check">
                       <input class="form-check-input" type="checkbox" id="auto-pizda">
-                      <label class="form-check-label" for="auto-pizda">
-                        <!--<span>-->
-                          Автоматически произвести перерасчет в BTC по курсу на момент поступления средств на счет
-                        <!--</span>-->
-                      </label>
+                      <label class="form-check-label" for="auto-pizda">Автоматически произвести перерасчет в BTC по курсу на момент поступления средств на счет</label>
                     </div>
 
                     <div class="form-check">
